@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  ms_feels_like:
+    build: ./microservices/ms_feels_like
+    container_name: ms-feels-like
+    ports:
+      - "8001:8001"
+
+  ms_umbrella_advice:
+    build: ./microservices/ms_umbrella_advice
+    container_name: ms-umbrella-advice
+    ports:
+      - "8002:8002"
